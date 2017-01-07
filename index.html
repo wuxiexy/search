@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MetronicApp">
+<head>
+	<meta charset="UTF-8">
+	<title>angular</title>
+    <link rel="stylesheet" href="./public/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/public/css/datatables.css">
+    <link rel="stylesheet" href="./public/public/css/search.css">
+</head>
+<body>
+
+	<div ng-controller="SearchController">
+        <section class="container searchContainer">
+            <!-- 检索输入表单 -->
+            <div class="mt30" searchformdirective></div>
+
+            <div id="patients" class="patients mt20">
+                <table id="searchPatients" class="table table-striped">
+                    <!-- 搜索填充的内容 -->
+                </table>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="./public/public/js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="./public/public/js/datatables.min.js"></script>
+    <script type="text/javascript" src="./public/public/js/angular.min.js"></script>
+    <script type="text/javascript" src="./public/controller/SearchController.js"></script>
+    <script type="text/javascript" src="./public/directive/SearchFormDirectives.js"></script>
+
+</body>
+</html>

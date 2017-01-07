@@ -1,0 +1,9 @@
+<div class="eachLine" ng-class="{'has-error':selectForm.{{search.field}}.$dirty && selectForm.{{search.field}}.$invalid}">
+    <div ng-switch="search.type" class="dib">
+        <select ng-switch-when="text" ng-options="mathSymbol as mathSymbol.value for mathSymbol in characterString track by mathSymbol.key" ng-model="search.operator"></select>
+        <select ng-switch-default ng-options="mathSymbol as mathSymbol.value for mathSymbol in mathematical track by mathSymbol.key" ng-model="search.operator"></select>
+    </div>
+    <input type="{{search.type}}" name="{{search.field}}" placeholder="请输入{{search.text}}" class="form-control" required ng-model="search.expression">
+</div>
+
+

@@ -1,0 +1,12 @@
+<form onsubmit="return false;" class="form-horizontal selectForm" name="selectForm" id="selectForm" role="form">
+    <div class="form-group" ng-repeat="search in condition track by $index" searchformlistdirective></div>
+
+    <div class="form-group mt20" style="height: 34px;margin-bottom: 0;">
+        <div class="col-md-1">
+            <input type="submit" class="searchBtn" ng-click="searchOn()" value="搜 索" searchrightawaydirective/>
+        </div>
+        <div class="col-md-2">
+            <button class="searchBtn" ng-click="addSearchCondition()" addsearchconditiondirective style="min-width: 128px;">添加搜索条件</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,21 @@
+{
+  "searchCondition": {
+      "searchConditionId": "123456789",
+      "condition": [
+          {"field": "name", "text": "姓名", "type":"text", "operator": "", "expression": ""},
+
+          {"field": "age", "text": "年龄", "type":"number", "operator": "", "expression": ""},
+
+          {"field": "dateOfBirth", "text": "出生日期", "type":"date", "operator": "", "expression": ""},
+
+          {"field": "outpatientNumber", "text":  "门诊编号", "type":"text", "operator": "", "expression": ""},
+
+          {"field": "sex", "text": "性别", "type":"text", "operator": "", "expression": ""},
+
+          {"field": "address", "text": "地址", "type":"text", "operator": "", "expression": ""},
+
+          {"field": "registrationDate", "text": "登记日期", "type":"date", "operator": "", "expression": ""}
+      ]
+
+  }
+}

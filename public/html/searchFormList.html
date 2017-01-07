@@ -1,0 +1,20 @@
+<!-- 检索框 每行条件的模板 -->
+<div class="col-md-2 searchTitle">
+    <select ng-options="select as select.text for select in searchSelectTitle track by select.field" class="selectpicker" ng-model="search" ng-change="searchSelectChange();" selectconditiondirective></select>
+</div>
+<div class="col-md-1 semicolon">
+    <span>:</span>
+</div>
+<div class="col-md-9 pl10">
+    <div ng-switch="search.field">
+        <div ng-switch-when="sex" sexdirective>
+            <select class="sexSelect" ng-options="mathSymbol as mathSymbol.value for mathSymbol in sex track by mathSymbol.key" ng-model="search.operator"></select>
+        </div>
+        <div ng-switch-default inputdirective></div>
+    </div>
+</div>
+
+<span ng-click="del($index);" class="del" deldirective></span>
+
+
+
